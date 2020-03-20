@@ -482,6 +482,7 @@ public class PieChartRenderer extends DataRenderer {
             for (int j = 0; j < entryCount; j++) {
 
                 PieEntry entry = dataSet.getEntryForIndex(j);
+                mEntryLabelsPaint.setColor(dataSet.getColor(j));
 
                 if (xIndex == 0)
                     angle = 0.f;
